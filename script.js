@@ -85,11 +85,13 @@ const updateLocalStorage = ( ) => {
 
         return {description: content.innerText, isCompleted }
     })
-    localStorage.setItem('tesks', JSON.stringify(localStorageTasks));
+    localStorage.setItem("tasks", JSON.stringify(localStorageTasks));
 };
 
 const refreshTasksUsingLocalStorage = () => {
-    const tasksFromLocalStorage = JSON.parse(localStorage.getItem('tesks'))
+    const tasksFromLocalStorage = JSON.parse(localStorage.getItem("tesks"));
+
+    if (!tasksFromLocalStorage) return;
 
     for (const task of tasksFromLocalStorage) {
         const taskItemContainer = document.createElement("div");
@@ -102,7 +104,7 @@ const refreshTasksUsingLocalStorage = () => {
             taskContent.classList.add("completed")
         }
     
-        taskContent.addEventListener('click', () => handleClick(taskContent));
+        taskContent.addEventListener("click", () => handleClick(taskContent));
     
         const deleteItem = document.createElement("i");
         deleteItem.classList.add("far");
@@ -120,5 +122,7 @@ const refreshTasksUsingLocalStorage = () => {
 refreshTasksUsingLocalStorage();
 
 addTaskButton.addEventListener("click", () => handleAddTask())
+
+inputElement.addEventListener("change", () => handleInputChange())
 
 inputElement.addEventListener("change", () => handleInputChange())
