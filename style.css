@@ -1,6 +1,6 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
@@ -10,9 +10,6 @@ body {
     background: linear-gradient(90deg,
   #233da8  0%,
   #b922f0 100% ) ;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 
     display: flex;
     align-items: center;
@@ -25,8 +22,6 @@ body {
     padding: 30px 40px;
     width: 40%;
     min-width: 500px;
-    
-   
 }
 
 .new-task-container {
@@ -106,7 +101,46 @@ cursor: pointer;
     text-decoration:line-through;
 }
 
-  
 @media only screen and (max-width: 768px) {
-    
+    .body{
+        background-size: cover;
+        background-position-y: center;
+    }
+    .container{
+        border: none;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+   .body{
+    max-width: auto;
+    width: 50%;
+  
+   }
+   .container{
+    width: 80%;
+    border: none;
+    min-width: 390px;
+}
+    .new-task-container {
+    width: 100%;
+
+}
+.new-task-container input {
+    padding: 5px;
+    width: 220px;
+}
+
+.new-task-button{
+    width: 60px;
+    font-size: 8px;
+    padding: 12px;
+    margin-left: 10px;
+  
+}
+.tasks-container {
+    padding: 10px;
+}
+
 }
