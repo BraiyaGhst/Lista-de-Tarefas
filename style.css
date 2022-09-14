@@ -10,6 +10,9 @@ body {
     background: linear-gradient(90deg,
   #233da8  0%,
   #b922f0 100% ) ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
     display: flex;
     align-items: center;
@@ -17,10 +20,12 @@ body {
 }
 
 .container {
+    
     border: 2px solid #fff;
     padding: 30px 40px;
     width: 40%;
     min-width: 500px;
+    
    
 }
 
@@ -99,5 +104,79 @@ cursor: pointer;
 
 .completed {
     text-decoration:line-through;
+}
+
+  
+@media screen and (max-width: 768px){
+    
+
+    .container{
+        width: 50%;
+        
+    }
+    .new-task-container {
+        width: 100%;
+        
+    }
+  
+    .tasks-container{
+        width: 100%;
+        
+    }
     
 }
+
+@media screen and (max-width: 600px)  {
+  
+  .container{
+    border: none;
+   
+  }
+  .tasks-container{
+    width: 380px;
+    margin-left: 20px;
+}
+.new-task-container {
+    width: 380px;
+    margin-left: 20px;
+    
+    
+}
+.body {
+    background: linear-gradient(90deg,
+    #233da8  0%,
+    #b922f0 100% ) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  
+}
+
+}
+@media screen and (max-width: 500px)  {
+  
+    .container{
+      border: none;
+     
+    }
+    .tasks-container{
+      width: 380px;
+      margin-left: 20px;
+  }
+  .new-task-container {
+      width: 380px;
+      margin-left: 20px;
+      
+      
+  }
+  .body {
+    background: linear-gradient(90deg,
+    #233da8  0%,
+    #b922f0 100% ) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover !important;
+  
+  }
+  
+  }
