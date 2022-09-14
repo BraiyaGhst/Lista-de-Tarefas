@@ -131,16 +131,15 @@ cursor: pointer;
     padding: 5px;
     width: 220px;
 }
-
 .new-task-button{
     width: 60px;
     font-size: 8px;
     padding: 12px;
-    margin-left: 10px;
+    margin-left: 5px;
   
 }
 .tasks-container {
-    padding: 10px;
+   
 }
 
 }
