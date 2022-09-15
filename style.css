@@ -108,21 +108,10 @@ cursor: pointer;
         background-position-y: center;
     }
     .container{
-     
+       
         width: 50%;
     }
-    .new-task-container input {
-        padding: 1px;
-        width: 220px;
-        
-    }
-    .new-task-button{
-        width: 80px;
-        font-size: 10px;
-        padding: 11px;
-        margin-left: 2px;
-      
-    }
+  
 }
 
 @media only screen and (max-width: 600px) {
@@ -141,15 +130,14 @@ cursor: pointer;
 
 }
 .new-task-container input {
-    padding: 1px;
+    padding: 5px;
     width: 220px;
-    
 }
 .new-task-button{
-    width: 80px;
-    font-size: 10px;
-    padding: 11px;
-    margin-left: 2px;
+    width: 60px;
+    font-size: 9px;
+    padding: 10px;
+    margin-left: 5px;
   
 }
 }
