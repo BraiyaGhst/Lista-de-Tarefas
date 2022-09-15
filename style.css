@@ -111,7 +111,18 @@ cursor: pointer;
      
         width: 50%;
     }
-  
+    .new-task-container input {
+        padding: 1px;
+        width: 220px;
+        
+    }
+    .new-task-button{
+        width: 80px;
+        font-size: 10px;
+        padding: 11px;
+        margin-left: 2px;
+      
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -127,8 +138,6 @@ cursor: pointer;
 }
     .new-task-container {
     width: 100%;
-    
-    
 
 }
 .new-task-container input {
